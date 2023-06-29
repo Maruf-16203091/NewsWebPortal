@@ -1,0 +1,13 @@
+<div class="container-fluid mt-3">
+  <h4>Health News</h4>
+  <div class="row">
+    <div class="container" *ngFor="let d of healthNewsDisplay" class="col-lg-3 mt-2 mb-3">
+      <div class="box">
+        <img src="{{ d.urlToImage }}"  width="100%" />
+        <h5 class="mt-2 mb-2">{{ d.title }}</h5>
+        <p>{{ d.content }}</p>
+        <a href="{{ d.url }}" target="_blank" class="btn btn-dark btn-sm mt-2">Read more</a>
+      </div>
+    </div>
+  </div>
+</div>
